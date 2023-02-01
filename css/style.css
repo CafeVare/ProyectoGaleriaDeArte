@@ -1,0 +1,123 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* estilos de body */
+
+body{
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+/* estilos de header */
+
+header{
+    background-color: #333333;
+}
+
+.logo{
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+}
+
+h1{
+    margin: 30px;
+    padding: 30px;
+    color: #c21d17;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* estilo menu */
+
+.navbar button{
+    background-color: #c21d17;
+}
+
+.menu nav{
+    text-align: center;
+}
+
+.menu nav ul li{
+    margin: 10px;
+    padding: 10px;
+    color: red;
+    background-color: transparent;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+    
+}
+
+
+
+/* estilos de main */
+/* estilos de main INICIO */
+
+main div{
+    margin-top: 30px;
+    text-align: center;
+}
+
+main div h2{
+    color:  #c21d17;
+}
+
+main div p{
+    margin-top: 30px;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.fotos{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+/* fin de estilo de main INICIO */
+
+/* estilo de main BIOGRAFIA */
+
+main p{
+    text-align: center;
+    font-size: 18px;
+}
+/* fin de estilo de main BIOGRAFIA */
+
+/* estilo de main GALERIA */
+
+.mainGaleria{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+/* fin de estilo de main GALERIA */
+
+/* estilo de main CONTACTO */
+main h2{
+    color:  rgb(252, 156, 156);
+}
+
+
+
+/* estillos de footer */
+
+footer{
+    background-color: white;
+    color: #c21d17;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
