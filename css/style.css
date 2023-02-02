@@ -10,13 +10,13 @@
 body{
     background-color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
 }
 
 /* estilos de header */
 
 header{
     background-color: #333333;
+
 }
 
 .logo{
@@ -76,9 +76,19 @@ main div p{
     font-size: 18px;
 }
 
-.fotos{
-    text-align: center;
-    margin: 20px;
+main .fotos{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+main .fotos img{
+    width: 100%;
+    margin: 10px;
     padding: 10px;
 }
 /* fin de estilo de main INICIO */
@@ -98,23 +108,59 @@ main p{
     flex-flow: column wrap;
     justify-content: space-between;
     text-align: center;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 50px;
+}
+
+.mainGaleria img{
+    width: 100%;
 }
 
 
 /* fin de estilo de main GALERIA */
 
 /* estilo de main CONTACTO */
-main h2{
-    color:  rgb(252, 156, 156);
+.mainContacto{ 
+    background-image:url(../img/paint-5699263_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+
+}
+.mainContacto h2{
+    color: black;
 }
 
 
 
+
+/* fin de estilo de main contacto*/
+
+/*estilos de main Tienda*/
+
+.mainTienda{
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    margin: 50px;
+    padding: 50px;
+   
+    
+}
+
+.mainTienda div{
+    margin: 20px;
+}
+
+.mainTienda img{
+    width: 100%;
+}
+
 /* estillos de footer */
 
 footer{
+   
     background-color: white;
     color: #c21d17;
     margin: 20px;
