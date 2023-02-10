@@ -3,7 +3,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+
 
 /* estilos de body */
 
@@ -113,7 +116,7 @@ main p{
 }
 
 .mainGaleria img{
-    width: 100%;
+    width: 75%;
 }
 
 
@@ -137,36 +140,67 @@ main p{
 
 /* fin de estilo de main contacto*/
 
-/*estilos de main Tienda*/
+/*estilos de Tienda*/
+
+.contenedorTienda{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    
+}
+
+.headerTienda{
+    grid-area: header;
+}
 
 .mainTienda{
-    display: flex;
-    flex-flow: column wrap;
-    justify-items: center;
-    margin: 50px;
-    padding: 50px;
-   
+    grid-area: main;
     
+
 }
 
-.mainTienda div{
-    
-    margin: 20px;
-    padding: 50px;
-    gap: 50px;
+.mainTienda section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
+
 
 .mainTienda div img{
-    margin: 20px;
-    padding: 20px;
-    
-    width: 100%;
+    width: 75%;
 }
 
-.mainTienda div input{
-    margin: 20px;
-    padding: 20px;
+.btn-compra {
+    transition: all 0.3s ease-in-out;
+    background-color: #c21d17;
+    border-color: #333333;
+  }
+  
+  .btn-compra:hover {
+    transform: scale(1.2);
+    background-color: #c21d17;
+    border-color: #333333;
+  }
+  
+
+
+/* animacion de imagenes en Galeria y Tienda */
+
+@media screen and (min-width:1024px){
+    .mainGaleria img:hover{
+        transform: scale(1.2);
+    }
+    .mainTienda img:hover{
+        transform: scale(1.1);
+    }
 }
+
 
 /* estillos de footer */
 
@@ -177,4 +211,8 @@ footer{
     margin: 50px;
     padding: 20px;
     text-align: center;
+}
+
+.footerTienda{
+    grid-area: footer;
 }
