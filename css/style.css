@@ -1,218 +1,169 @@
-/* reset */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-/* estilos de body */
-
-body{
-    background-color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 /* estilos de header */
-
-header{
-    background-color: #333333;
-
-}
-
-.logo{
+header {
+  background-color: #333333; }
+  header .logo {
     margin: 0px;
     padding: 30px;
-    text-align: center;
-}
+    text-align: center; }
+  header .navbar {
+    text-align: center; }
+    header .navbar button {
+      background-color: #c21d17; }
+    header .navbar ul li {
+      margin: 5px;
+      padding: 5px;
+      color: #c21d17;
+      background-color: transparent;
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: underline; }
 
-h1{
-    margin: 30px;
-    padding: 30px;
-    color: #c21d17;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-/* estilo menu */
-
-.navbar button{
-    background-color: #c21d17;
-}
-
-.menu nav{
-    text-align: center;
-}
-
-.menu nav ul li{
-    margin: 10px;
-    padding: 10px;
-    color: red;
-    background-color: transparent;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: underline;
-    
-    
-}
-
-
-
-/* estilos de main */
-/* estilos de main INICIO */
-
-main div{
-    margin-top: 30px;
-    text-align: center;
-}
-
-main div h2{
-    color:  #c21d17;
-}
-
-main div p{
+/*estilos de main Inicio*/
+.mainInicio div {
+  margin-top: 30px;
+  text-align: center; }
+  .mainInicio div h2 {
+    color: #c21d17; }
+  .mainInicio div p {
     margin-top: 30px;
     padding: 30px;
-    font-size: 18px;
-}
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333333;
+    font-family: 'Roboto Slab', serif; }
+    .mainInicio div p span {
+      display: block; }
 
-main .fotos{
+.mainInicio .foto {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px; }
+
+@media screen and (min-width: 1024px) {
+  .foto img {
+    width: 500px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     margin: 10px;
-    padding: 10px;
+    padding: 10px; } }
 
-}
+/*estilos de main biografia*/
+.mainBiografia p {
+  margin-top: 15px;
+  padding: 15px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #333333;
+  font-family: 'Roboto Slab', serif; }
+  .mainBiografia p span {
+    display: block; }
 
-main .fotos img{
-    width: 100%;
+.mainBiografia div {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px; }
+  .mainBiografia div img {
+    margin: 5px; }
+
+@media screen and (min-width: 1024px) {
+  .mainBiografia div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
-    padding: 10px;
-}
-/* fin de estilo de main INICIO */
+    padding: 10px; }
+    .mainBiografia div img {
+      width: 400px;
+      margin: 5px; } }
 
-/* estilo de main BIOGRAFIA */
+/*estilos de main contacto*/
+.mainContacto h2 {
+  color: #c21d17;
+  text-align: center; }
 
-main p{
-    text-align: center;
-    font-size: 18px;
-}
-/* fin de estilo de main BIOGRAFIA */
+.mainContacto form {
+  width: 90%; }
+  .mainContacto form fieldset legend {
+    color: #c21d17; }
 
-/* estilo de main GALERIA */
-
-.mainGaleria{
+@media screen and (min-width: 1024px) {
+  .mainContacto form fieldset section .form {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
-    text-align: center;
+    gap: 5px; } }
+
+/*estilos de main galeria*/
+.mainGaleria {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center; }
+  .mainGaleria .carousel-inner {
     margin: 10px;
-    padding: 50px;
-}
+    padding: 10px;
+    width: 100%; }
 
-.mainGaleria img{
-    width: 75%;
-}
-
-
-/* fin de estilo de main GALERIA */
-
-/* estilo de main CONTACTO */
-.mainContacto{ 
-    background-image:url(../img/paint-5699263_640.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-
-}
-.mainContacto h2{
-    color: black;
-}
-
-
-
-
-/* fin de estilo de main contacto*/
-
-/*estilos de Tienda*/
-
-.contenedorTienda{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    
-}
-
-.headerTienda{
-    grid-area: header;
-}
-
-.mainTienda{
-    grid-area: main;
-    
-
-}
-
-.mainTienda section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-
-.mainTienda div img{
-    width: 75%;
-}
-
-.btn-compra {
-    transition: all 0.3s ease-in-out;
-    background-color: #c21d17;
-    border-color: #333333;
-  }
-  
-  .btn-compra:hover {
-    transform: scale(1.2);
-    background-color: #c21d17;
-    border-color: #333333;
-  }
-  
-
-
-/* animacion de imagenes en Galeria y Tienda */
-
-@media screen and (min-width:1024px){
-    .mainGaleria img:hover{
+/*estilos de main tienda*/
+.contenedorTienda {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "main" "footer"; }
+  .contenedorTienda .headerTienda {
+    grid-area: header; }
+  .contenedorTienda .mainTienda {
+    grid-area: main; }
+    .contenedorTienda .mainTienda section div {
+      margin: 5px;
+      padding: 5px; }
+      .contenedorTienda .mainTienda section div img {
+        width: 50%; }
+      .contenedorTienda .mainTienda section div .btn-compra {
+        transition: all 0.3s ease-in-out;
+        background-color: #c21d17;
+        border-color: #333333; }
+      .contenedorTienda .mainTienda section div .btn-compra:hover {
         transform: scale(1.2);
-    }
-    .mainTienda img:hover{
-        transform: scale(1.1);
-    }
-}
+        background-color: #c21d17;
+        border-color: #333333; }
+  @media screen and (min-width: 1024px) {
+    .contenedorTienda .mainTienda section div img:hover {
+      transform: scale(1.1); } }
+  .contenedorTienda .footerTienda {
+    grid-area: footer; }
 
+.mainInicio h1, .mainBiografia h1, .mainContacto h1, .mainGaleria h1, .contenedorTienda .mainTienda h1 {
+  margin: 15px;
+  padding: 15px;
+  color: #c21d17;
+  text-align: center;
+  text-transform: uppercase; }
+
+/*estilos de body*/
+body {
+  background-color: #F8F8FF;
+  font-family: 'Mynerve', cursive; }
 
 /* estillos de footer */
-
-footer{
-   
-    background-color: white;
-    color: #c21d17;
-    margin: 50px;
-    padding: 20px;
-    text-align: center;
-}
-
-.footerTienda{
-    grid-area: footer;
-}
+footer {
+  background-color: #F8F8FF;
+  color: #c21d17;
+  padding: 20px;
+  text-align: center; }

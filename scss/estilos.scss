@@ -1,0 +1,36 @@
+//reset
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// imports
+@import "variables/variables";
+@import "pagesscss/index.scss";
+@import "pagesscss/biografia.scss";
+@import "pagesscss/contacto.scss";
+@import "pagesscss/galeria.scss";
+@import "pagesscss/tienda.scss";
+@import "variables/extend";
+@import "variables/mixin";
+
+//estilos de body de todos los html
+/*estilos de body*/
+
+body{
+    background-color: $colorFondo;
+    font-family: 'Mynerve', cursive;
+}
+
+//estilos de footer de todos los html
+/* estillos de footer */
+
+footer{
+   
+    background-color: $colorFondo;
+    color: $colorPrincipal;
+    padding: 20px;
+    text-align: center;
+}

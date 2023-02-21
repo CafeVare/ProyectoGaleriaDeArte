@@ -1,0 +1,54 @@
+/*estilos de main tienda*/
+.contenedorTienda{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    .headerTienda{
+        grid-area: header;
+    }
+    .mainTienda{
+        grid-area: main;
+        h1{
+            @extend %titulo
+        }
+        section{
+            div{
+                margin: 5px;
+                padding: 5px;
+                img{
+                    width: 50%;
+                }
+                .btn-compra {
+                    transition: all 0.3s ease-in-out;
+                    background-color: $colorPrincipal;
+                    border-color: $colorParrafo;
+                  }
+                .btn-compra:hover {
+                    transform: scale(1.2);
+                    background-color: $colorPrincipal;
+                    border-color: $colorParrafo;
+                  }
+            }
+        }
+
+    }
+    @media screen and (min-width:1024px){
+        .mainTienda{
+            section{
+                div{
+                    img:hover{
+                    transform: scale(1.1);
+                }
+            }
+        } 
+        }
+    }
+    .footerTienda{
+        grid-area: footer;
+    }
+}

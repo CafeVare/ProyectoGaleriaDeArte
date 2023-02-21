@@ -4,69 +4,202 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trabajos realizados por el artista Juan Alberto Varela Rodriguez">
+    <meta name="keywords" content="BIENVENIDO, GALERIA, ARTE, TIENDA, VARELA RODRIGUEZ"
      <!-- link de bootstrap-->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
      <!--link de mi css-->
     <link rel="stylesheet" href="../css/style.css">
+        <!-- link de font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mynerve&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <title>Galeria Varela Rodriguez</title>
 </head>
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../img/alphabet-150829_640.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                  </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link text-danger" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-danger" href="../pages/biografia.html">Biografia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-danger" href="../pages/galeria.html">Galeria</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-danger" href="../pages/contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-danger" href="../pages/tienda.html">Tienda</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/alphabet-150829_640.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="biografia.html">Biografia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="tienda.html">Tienda</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
 
     <main class="mainGaleria">
         <h1>Galeria</h1>
-        <div>
-                <img src="../img/paint-5699263_640.jpg" alt="imagen de relleno">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, iusto fugiat. Dolorem repellat libero labore, quos amet error, sapiente reiciendis ea perferendis laudantium incidunt recusandae iste, facilis necessitatibus maiores qui?</p>
+        <div id="carouselCascada" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/img_cascada1.jpg" class="d-block w-100" alt="cuadro de cascada primera parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_cascada2.jpg" class="d-block w-100" alt="cuadro de cascada segunda parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_cascada3.jpg" class="d-block w-100" alt="cuadro de cascada tercera parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_cascada4.jpg" class="d-block w-100" alt="cuadro de cascada cuarta parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_cascada5.jpg" class="d-block w-100" alt="cuadro de cascada quinta parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_cascada6.jpg" class="d-block w-100" alt="cuadro de cascada sexta parte">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCascada" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCascada" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div>
-                <img src="../img/paint-5699263_640.jpg" alt="imagen de relleno">      
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, iusto fugiat. Dolorem repellat libero labore, quos amet error, sapiente reiciendis ea perferendis laudantium incidunt recusandae iste, facilis necessitatibus maiores qui?</p>
+        <div id="carouselMate" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/img_matedb1.jpg" class="d-block w-100" alt="mate de madera pintada primera imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_matedb2.jpg" class="d-block w-100" alt="mate de madera pintada segunda imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_matedb3.jpg" class="d-block w-100" alt="mate de madera pintada tercera imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_matedb4.jpg" class="d-block w-100" alt="mate de madera pintada cuarta imagen">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMate" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMate" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div>
-                <img src="../img/paint-5699263_640.jpg" alt="imagen de relleno">     
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, iusto fugiat. Dolorem repellat libero labore, quos amet error, sapiente reiciendis ea perferendis laudantium incidunt recusandae iste, facilis necessitatibus maiores qui?</p>
-        </div>   
-        <div>
-                <img src="../img/paint-5699263_640.jpg" alt="imagen de relleno">      
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, iusto fugiat. Dolorem repellat libero labore, quos amet error, sapiente reiciendis ea perferendis laudantium incidunt recusandae iste, facilis necessitatibus maiores qui?</p>
+        <div id="carouselCiudad" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/img_ciudad1.jpg" class="d-block w-100" alt="cuadro de ciudad primera parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_ciudad2.jpg" class="d-block w-100" alt="cuadro de ciudad segunda parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_ciudad3.jpg" class="d-block w-100" alt="cuadro de ciudad tercera parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_ciudad4.jpg" class="d-block w-100" alt="cuadro de ciudad cuarta parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_ciudad5.jpg" class="d-block w-100" alt="cuadro de ciudad quinta parte">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCiudad" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCiudad" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div>
-                <img src="../img/paint-5699263_640.jpg" alt="imagen de relleno">        
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, iusto fugiat. Dolorem repellat libero labore, quos amet error, sapiente reiciendis ea perferendis laudantium incidunt recusandae iste, facilis necessitatibus maiores qui?</p>
+        <div id="carouselCasita" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/img_casita1.jpg" class="d-block w-100" alt="casita de muñecas pintada primera parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_casita2.jpg" class="d-block w-100" alt="casita de muñecas pintada segunda parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_casita3.jpg" class="d-block w-100" alt="casita de muñecas pintada tercera parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_casita4.jpg" class="d-block w-100" alt="casita de muñecas pintada cuarta parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_casita5.jpg" class="d-block w-100" alt="casita de muñecas pintada quinta parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_casita6.jpg" class="d-block w-100" alt="casita de muñecas pintada sexta parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_casita7.jpg" class="d-block w-100" alt="casita de muñecas pintada septima parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_casita8.jpg" class="d-block w-100" alt="casita de muñecas pintada octava parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_casita9.jpg" class="d-block w-100" alt="casita de muñecas pintada novena parte">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasita" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCasita" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+        <div id="carouselCosta" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/img_costa1.jpg" class="d-block w-100" alt="cuadro de barco encallado primera parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_costa2.jpg" class="d-block w-100" alt="cuadro de barco encallado segunda parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_costa3.jpg" class="d-block w-100" alt="cuadro de barco encallado tercera parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_costa4.jpg" class="d-block w-100" alt="cuadro de barco encallado cuarta parte">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/img_costa5.jpg" class="d-block w-100" alt="cuadro de barco encallado quinta parte">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCosta" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCosta" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
     </main>
 
     <footer>
