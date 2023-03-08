@@ -1,3 +1,6 @@
+//import mixin
+
+@import "variables/mixin";
 
 /* estilos de header */
 
@@ -54,26 +57,55 @@ header{
     }
     .foto{
         display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
     }
 
 }
+/*estilos de tablet*/
+
+@media screen and (min-width:600px){
+    .contenedorInicio{
+        @include grid-
+        .headerInicio{
+            grid-template-areas: header;
+        }
+        .mainInicio{
+            grid-template-areas: main;
+        }
+        .footerInicio{
+            grid-template-areas: footer;
+        }
+        .foto {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            
+        }
+        }
+}
+
+
+
+/*estilos de desktop*/
 
 @media screen and (min-width:1024px){
     .foto{
-        img{
-        width: 500px;
         display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        img{
+            width: 50%;
+        }
     }
 
     }
-}  

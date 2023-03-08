@@ -1,3 +1,7 @@
+//import mixin
+
+@import "variables/mixin";
+
 /*estilos de main galeria*/
 .mainGaleria{
             display: flex;
@@ -11,5 +15,21 @@
         margin: 10px;
         padding: 10px;
         width: 100%;
+    }
+}
+
+/*estilos de tablet*/
+@media screen and (min-width:600px){
+    .contenedorGaleria{
+        @include grid-
+        .headerGaleria{
+            grid-template-areas: header;
+        }
+        .mainGaleria{
+            grid-template-areas: main;
+        }
+        .footerGaleria{
+            grid-template-areas: footer;
+        }
     }
 }

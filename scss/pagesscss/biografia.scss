@@ -1,3 +1,6 @@
+// import mixin
+@import "variables/mixin";
+
 /*estilos de main biografia*/
 
 .mainBiografia{
@@ -43,5 +46,22 @@
 
 
     }
+}
+/*estilos de tablet*/
+
+@media screen and (min-width:600px){
+    .contenedorBiografia{
+        @include grid-
+        .headerBiografia{
+            grid-template-areas:header;
+        }
+        .mainBiografia{
+            grid-template-areas: main;
+        }
+        .footerBiografia{
+            grid-template-areas: footer;
+        }
+    }
+
 }
 
