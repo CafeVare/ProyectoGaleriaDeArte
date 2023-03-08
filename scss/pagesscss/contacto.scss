@@ -17,6 +17,10 @@
                 color: $colorPrincipal;
             }
         }
+        .form{
+            display: flex;
+            flex-flow: column wrap;
+        }
     }
 }
 /*estilos de tablet*/
